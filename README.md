@@ -1,15 +1,15 @@
 # finBERT Sentiment Analysis for Stock Prediction
 
 ## Project/Goals
-Explore the effectiveness of finBERT by quantifying sentiment scores for news headlines.  Subsequently, these scores are used to  predict changes in the stock market by comparing daily aggregated sentiment of the top S&P500 companies (representing ~40% of the stocks value)
+Explore the effectiveness of finBERT by quantifying sentiment scores for news headlines. Subsequently, these scores are used to predict changes in the stock market by comparing daily aggregated sentiment of the top S&P 500 companies (representing ~40% of the index's value)
 
 ## Hypothesis
-Headlines should be a moderately strong predictor of stock price fluctuations.  Aggregating news headlines should relfelct both the financial performance and cultural sentiment towards a companny.
+Headlines should be a moderately strong predictor of stock price fluctuations. Aggregating news headlines should reflect both the financial performance and cultural sentiment towards a company.
 
 ## EDA 
 EDA revealed a few important characteristics in the dataset:
 - The target class (stock increase/decrease) was well balanced
-- FinBERT perfromed exceedingly well at quantifying sentiment
+- FinBERT performed exceedingly well at quantifying sentiment
 - The sentiment was not highly correlated with stock price fluctuations. 
 
 
@@ -22,12 +22,12 @@ EDA revealed a few important characteristics in the dataset:
 6. LSTM (in progress)
 
 ## Results/Demo
-An SVM model hyperparameterized with gridsearch CV was able to perform moderately well given the limitations on data quality.  Given this result, it appears worthwhile to invest in further exploration and refinement of the model. 
-The top model performed as follows:
+An SVM model tuned with GridSearchCV performed moderately well given the limitations on data quality. Given this result, it appears worthwhile to invest in further exploration and refinement of the model.
+The top model performed as follows (cross-validated means, see Modeling.ipynb):
 61%  Accuracy
-75%  Precision
-61%  Recall
-97%  F1
+61%  Precision
+97%  Recall
+75%  F1
 
 
 ## Future Goals
